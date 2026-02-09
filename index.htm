@@ -1,0 +1,1259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DawaImg: Face Forensics</title>
+    <meta
+      name="description"
+      content="DawaImg is a free, offline face forensics organizer for macOS and Windows. No cloud, no telemetry, no accounts."
+    />
+  </head>
+
+  <body
+    style="
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Arial, sans-serif;
+      background: #ffffff;
+      color: #2e2f33;
+      line-height: 1.5;
+    "
+  >
+    <!-- Banner -->
+    <div
+      style="
+        background: linear-gradient(90deg, rgba(74,111,165,0.16), rgba(74,111,165,0.05));
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+      "
+    >
+      <div
+        style="
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 10px 18px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+        "
+      >
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <!-- Logo placeholder -->
+  <img
+    src="images/icon.png"
+    alt="DawaImg logo"
+    style="
+      width: 34px;
+    height: 34px;
+      object-fit: contain;
+      display: block;
+    "
+  />
+          <div style="display: flex; flex-direction: column;">
+            <div style="font-weight: 700; letter-spacing: 0.2px; color: #2e2f33;">DawaImg: Face Forensics</div>
+            <div style="font-size: 12px; color: #5a5f66;">Offline • Private • Post-capture analysis</div>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: flex-end;">
+          <a
+            href="#research"
+            style="
+              text-decoration: none;
+              color: #2e2f33;
+              font-size: 13px;
+              padding: 8px 10px;
+              border-radius: 6px;
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+            "
+            >Research</a
+          >
+          <a
+            href="#download"
+            style="
+              text-decoration: none;
+              color: #2e2f33;
+              font-size: 13px;
+              padding: 8px 10px;
+              border-radius: 6px;
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+            "
+            >Download</a
+          >
+          <a
+            href="#screenshots"
+            style="
+              text-decoration: none;
+              color: #2e2f33;
+              font-size: 13px;
+              padding: 8px 10px;
+              border-radius: 6px;
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+            "
+            >Screenshots</a
+          >
+          <a
+            href="#faq"
+            style="
+              text-decoration: none;
+              color: #2e2f33;
+              font-size: 13px;
+              padding: 8px 10px;
+              border-radius: 6px;
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+            "
+            >FAQ</a
+          >
+          <a
+            href="#roadmap"
+            style="
+              text-decoration: none;
+              color: #2e2f33;
+              font-size: 13px;
+              padding: 8px 10px;
+              border-radius: 6px;
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+            "
+            >Road Map</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <main style="max-width: 1100px; margin: 0 auto; padding: 26px 18px 70px;">
+      <!-- Hero -->
+      <!-- Hero -->
+<section style="padding: 18px 0 8px;">
+  <div style="display:flex; flex-direction:column; gap:12px;">
+
+    <!-- Headline -->
+    <h1 style="margin: 0; font-size: 40px; line-height: 1.15; letter-spacing: -0.4px; color: #2e2f33;">
+      Offline Face Forensics for Mac and Windows.
+    </h1>
+
+    <!-- Subhead (friendlier + clearer) -->
+    <div style="color:#4c5158; font-size:15px; max-width: 780px;">
+      Extract faces from large image and video collections, group them into “people,” and search your dataset — entirely
+      offline. No cloud, no telemetry, no accounts.
+    </div>
+
+    <!-- CTAs -->
+    <div id="download" style="display:flex; gap:12px; flex-wrap:wrap; margin-top: 6px;">
+      <a
+        href="https://f004.backblazeb2.com/file/DawaImg/DawaImg-38.0.0.msi"
+        style="
+          background:#4a6fa5;
+          color:#ffffff;
+          text-decoration:none;
+          padding:12px 14px;
+          border-radius:10px;
+          border:1px solid rgba(0,0,0,0.08);
+          font-weight:750;
+          letter-spacing:0.2px;
+          display:inline-flex;
+          align-items:center;
+          gap:10px;
+        "
+      >
+        <span>Download for Windows</span>
+        <span style="font-size:12px; opacity:0.9; font-weight:650;">.msi</span>
+      </a>
+
+      <a
+        href="https://f004.backblazeb2.com/file/DawaImg/DawaImg-38.dmg"
+        style="
+          background:rgba(0,0,0,0.02);
+          color:#2e2f33;
+          text-decoration:none;
+          padding:12px 14px;
+          border-radius:10px;
+          border:1px solid rgba(0,0,0,0.12);
+          font-weight:750;
+          letter-spacing:0.2px;
+          display:inline-flex;
+          align-items:center;
+          gap:10px;
+        "
+      >
+        <span>Download for Mac</span>
+        <span style="font-size:12px; color:#5a5f66; font-weight:650;">.dmg</span>
+      </a>
+    </div>
+
+    <!-- Trust pills -->
+    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top: 4px;">
+      <span
+        style="
+          font-size:12px;
+          color:#2e2f33;
+          border:1px solid rgba(0,0,0,0.10);
+          background:rgba(0,0,0,0.02);
+          padding:6px 10px;
+          border-radius:999px;
+        "
+        >Offline</span
+      >
+      <span
+        style="
+          font-size:12px;
+          color:#2e2f33;
+          border:1px solid rgba(0,0,0,0.10);
+          background:rgba(0,0,0,0.02);
+          padding:6px 10px;
+          border-radius:999px;
+        "
+        >No cloud</span
+      >
+      <span
+        style="
+          font-size:12px;
+          color:#2e2f33;
+          border:1px solid rgba(0,0,0,0.10);
+          background:rgba(0,0,0,0.02);
+          padding:6px 10px;
+          border-radius:999px;
+        "
+        >No telemetry</span
+      >
+      <span
+        style="
+          font-size:12px;
+          color:#2e2f33;
+          border:1px solid rgba(0,0,0,0.10);
+          background:rgba(0,0,0,0.02);
+          padding:6px 10px;
+          border-radius:999px;
+        "
+        >No accounts</span
+      >
+      <span
+        style="
+          font-size:12px;
+          color:#2e2f33;
+          border:1px solid rgba(0,0,0,0.10);
+          background:rgba(0,0,0,0.02);
+          padding:6px 10px;
+          border-radius:999px;
+        "
+        >Post-capture only</span
+      >
+    </div>
+
+    <!-- Problem statement + short "why" -->
+    <div
+      style="
+        margin-top: 10px;
+        padding: 14px 14px;
+        border: 1px solid rgba(0,0,0,0.10);
+        background: rgba(0,0,0,0.02);
+        border-radius: 12px;
+      "
+    >
+      <div style="font-size: 13px; color: #5a5f66; margin-bottom: 6px;">Why DawaImg</div>
+      <div style="font-size: 18px; color: #2e2f33;">
+        “Organizing millions of faces across images and video is slow, opaque, cloud-dependent, and risky.”
+      </div>
+      <div style="margin-top: 8px; color:#5a5f66; font-size: 14px; max-width: 900px;">
+        DawaImg keeps analysis local and transparent: import a dataset, extract faces, cluster into “people,” search, and
+        export results — without uploading anything.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 60-second overview -->
+<section style="margin-top: 34px;">
+  <h2 style="margin: 0 0 12px; font-size: 22px; color:#2e2f33;">
+    ⏱️ 60-Second Overview
+  </h2>
+
+  <div
+    style="
+      border: 1px solid rgba(0,0,0,0.10);
+      background: rgba(0,0,0,0.02);
+      border-radius: 12px;
+      padding: 16px;
+    "
+  >
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+      "
+    >
+      <!-- What it is -->
+      <div>
+        <div style="font-weight: 750; margin-bottom: 6px; color:#2e2f33;">
+          What it is
+        </div>
+        <ul style="margin: 0; padding-left: 18px; color:#2e2f33; font-size:14px;">
+          <li>Desktop face forensics and organization tool</li>
+          <li>Runs entirely on your machine</li>
+          <li>Designed for large image and video collections</li>
+        </ul>
+      </div>
+
+      <!-- What you do -->
+      <div>
+        <div style="font-weight: 750; margin-bottom: 6px; color:#2e2f33;">
+          What you do
+        </div>
+        <ol style="margin: 0; padding-left: 18px; color:#2e2f33; font-size:14px;">
+          <li>Import a folder, Image, Video, PDF, </li>
+          <li>Extract and cluster faces into “people”</li>
+          <li>Search, label, blur, or export results</li>
+          <li>Face Recognition on local data</li>
+          <li>Cross-reference faces back to original frames</li>
+        </ol>
+      </div>
+
+      <!-- What it is not -->
+      <div>
+        <div style="font-weight: 750; margin-bottom: 6px; color:#2e2f33;">
+          What it is not
+        </div>
+        <ul style="margin: 0; padding-left: 18px; color:#2e2f33; font-size:14px;">
+          <li>No cloud processing or uploads</li>
+          <li>No live surveillance or monitoring</li>
+          <li>No preloaded databases or identities</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- One-line reassurance -->
+    <div
+      style="
+        margin-top: 14px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(0,0,0,0.08);
+        color:#5a5f66;
+        font-size:14px;
+        max-width: 920px;
+      "
+    >
+      In short: you bring the data, DawaIMG does the analysis locally, and you decide how results are used.
+    </div>
+  </div>
+</section>
+
+
+
+      <!-- Screenshots -->
+      <section id="screenshots" style="margin-top: 34px;">
+        <h2 style="margin: 0 0 12px; font-size: 22px; color: #2e2f33;">Screenshots</h2>
+        <div style="color: #5a5f66; font-size: 14px; margin-bottom: 12px;">
+          DawaImg has over 100 powerful features, here are just a few screenshots.
+        </div>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+          "
+        >
+          <a
+  href="images/screen1.png"
+  target="_blank"
+  style="
+    height: 170px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.10);
+    background: rgba(74,111,165,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+  "
+>
+  <img
+    src="images/screen1.png"
+    alt="Screenshot 1"
+    style="
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    "
+  />
+</a>
+
+         <a
+  href="images/screen2.png"
+  target="_blank"
+  style="
+    height: 170px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.10);
+    background: rgba(74,111,165,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+  "
+>
+  <img
+    src="images/screen2.png"
+    alt="Screenshot 2"
+    style="
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    "
+  />
+</a>
+          <a
+  href="images/screen3.png"
+  target="_blank"
+  style="
+    height: 170px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.10);
+    background: rgba(74,111,165,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+  "
+>
+  <img
+    src="images/screen3.png"
+    alt="Screenshot 3"
+    style="
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    "
+  />
+</a>
+          <a
+  href="images/screen4.png"
+  target="_blank"
+  style="
+    height: 170px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.10);
+    background: rgba(74,111,165,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+  "
+>
+  <img
+    src="images/screen4.png"
+    alt="Screenshot 4"
+    style="
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    "
+  />
+</a>
+          <a
+  href="images/screen5.png"
+  target="_blank"
+  style="
+    height: 170px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.10);
+    background: rgba(74,111,165,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+  "
+>
+  <img
+    src="images/screen5.png"
+    alt="Screenshot 5"
+    style="
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    "
+  />
+</a>
+         <a
+  href="images/screen6.png"
+  target="_blank"
+  style="
+    height: 170px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.10);
+    background: rgba(74,111,165,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-decoration: none;
+  "
+>
+  <img
+    src="images/screen6.png"
+    alt="Screenshot 6"
+    style="
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    "
+  />
+</a>
+        </div>
+      </section>
+
+      <!-- 3-column summary pills -->
+      <section style="margin-top: 34px;">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+          "
+        >
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 700; margin-bottom: 6px; color:#2e2f33;">🔌❌ Offline by design</div>
+            <div style="color: #5a5f66; font-size: 14px;">
+              No cloud services, no telemetry, no network dependency.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 700; margin-bottom: 6px; color:#2e2f33;">🧱 Built for scale</div>
+            <div style="color: #5a5f66; font-size: 14px;">
+              Import entire folders and work with very large image and video datasets, scales to 4 million images. 
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 700; margin-bottom: 6px; color:#2e2f33;">🔍 Forensic workflows</div>
+            <div style="color: #5a5f66; font-size: 14px;">
+              Post-capture analysis for research, documentation, and privacy-preserving work.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Audience -->
+    <!-- Is DawaIMG a good fit for you? -->
+<section style="margin-top: 34px;">
+  <h2 style="margin: 0 0 12px; font-size: 22px; color:#2e2f33;">
+    👥 Is DawaIMG a good fit for you?
+  </h2>
+
+  <div
+    style="
+      border: 1px solid rgba(0,0,0,0.10);
+      background: rgba(0,0,0,0.02);
+      border-radius: 12px;
+      padding: 16px;
+    "
+  >
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      "
+    >
+      <!-- Good fit -->
+      <div>
+        <div style="font-weight:750; margin-bottom:8px; color:#2e2f33;">
+          ✅ Good fit if you:
+        </div>
+        <ul style="margin:0; padding-left:18px; color:#2e2f33; font-size:14px;">
+          <li>Work with large collections of images or video</li>
+          <li>Need automated face extraction and organization</li>
+          <li>Require 100% offline, local-only analysis</li>
+          <li>Conduct research, journalism, archiving, or forensic analysis</li>
+          <li>Experiment with computer vision or privacy-preserving techniques</li>
+        </ul>
+      </div>
+
+      <!-- Not a fit -->
+      <div>
+        <div style="font-weight:750; margin-bottom:8px; color:#2e2f33;">
+          ❌ Probably not a fit if you:
+        </div>
+        <ul style="margin:0; padding-left:18px; color:#2e2f33; font-size:14px;">
+          <li>Need real-time monitoring, alerts, or live feeds</li>
+          <li>Expect cloud-based processing or SaaS workflows</li>
+          <li>Want preloaded face databases or identity lookups</li>
+          <li>Need the software to identify people by name</li>
+          <li>Are looking for a consumer photo editor</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Closing note -->
+    <div
+      style="
+        margin-top: 14px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(0,0,0,0.08);
+        color:#5a5f66;
+        font-size:14px;
+        max-width: 900px;
+      "
+    >
+      DawaIMG is designed for deliberate, post-capture analysis where transparency, control, and scale matter more than automation or convenience.
+    </div>
+  </div>
+</section>
+
+
+      <!-- Features -->
+      <section style="margin-top: 34px;">
+        <h2 style="margin: 0 0 12px; font-size: 22px; color:#2e2f33;">✨ DawaIMG Features</h2>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+          "
+        >
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 700; margin-bottom: 10px; color:#2e2f33;">🗂️ Extraction & Organization</div>
+            <ul style="margin: 0; padding-left: 18px; color: #2e2f33;">
+              <li>Extract faces from still images</li>
+              <li>Extract faces from video, including frame analysis and grouping faces into individual people</li>
+              <li>Automatically group faces into distinct people identities</li>
+              <li>Organize people consistently across images, videos, and other media sources</li>
+              <li>Import and process entire folders and large datasets efficiently</li>
+              <li>Extract faces from non-traditional sources such as webcams (post-capture)</li>
+            </ul>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 700; margin-bottom: 10px; color:#2e2f33;">🔍📊 Search, Analysis & Reporting</div>
+            <ul style="margin: 0; padding-left: 18px; color: #2e2f33;">
+              <li>Face and person search engine with flexible querying capabilities</li>
+              <li>Face recognition search with configurable similarity thresholds</li>
+              <li>Generate reports from video content, including counting people in crowds</li>
+              <li>Group people by gender and perform gender-based searches</li>
+              <li>Gender detection queries</li>
+              <li>Age detection queries, including filtering for children, adults, and other age ranges</li>
+            </ul>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 700; margin-bottom: 10px; color:#2e2f33;">🕶️ Privacy Tools</div>
+            <ul style="margin: 0; padding-left: 18px; color: #2e2f33;">
+              <li>Face blurring for privacy and anonymization use cases</li>
+            </ul>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 700; margin-bottom: 10px; color:#2e2f33;">🧪🛡️ Labs & Defensive Research</div>
+            <ul style="margin: 0; padding-left: 18px; color: #2e2f33;">
+              <li>
+                Face recognition labs for developing and testing techniques that block face extraction and face
+                recognition
+              </li>
+              <li>
+                Design Face Masks to Block Face Detection
+              </li>
+               <li>
+                Design Face Masks to Block Face Recognition
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" style="margin-top: 34px;">
+        <h2 style="margin: 0 0 12px; font-size: 22px; color:#2e2f33;">💬 DawaIMG – Frequently Asked Questions</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: 10px;">
+          <!-- FAQ item template -->
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">1. What is DawaIMG?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              DawaIMG is a free, offline face forensics organizer for macOS and Windows designed to extract, organize,
+              and analyze faces from large image and video datasets.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">2. Is DawaIMG really free?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              Yes. DawaIMG is free to use and does not require subscriptions, accounts, or online activation.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">3. Does DawaIMG include any face databases or sample data?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              No. DawaIMG ships completely empty. Users must supply all images and videos themselves.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">4. Does DawaIMG require an internet connection?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              No. DawaIMG operates 100% offline and has no cloud services, network dependencies, or telemetry.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">5. Does DawaIMG collect or transmit any data?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              No. DawaIMG collects no user data, no analytics, and no behavioral or usage metrics.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">6. Can DawaIMG be used anonymously?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              Yes. There are no accounts, logins, licenses, or identifiers required to use the software.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">7. Is DawaIMG a surveillance or monitoring tool?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              No. DawaIMG does not support live feeds, continuous monitoring, alerts, or real-time tracking.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">8. Does DawaIMG support real-time face recognition?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              No. All processing is post-capture only. Real-time or live face recognition is not supported.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">9. Is DawaIMG a government or law-enforcement tool?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              No. DawaIMG is not developed for, affiliated with, or used by government agencies.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">10. Can DawaIMG be used for doxing or harassment?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              No. DawaIMG is not designed to enable doxing, targeting, or harassment workflows.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">11. What types of data can I import?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              You can import entire folders of images and videos, including very large datasets containing millions of
+              files.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">12. How does DawaIMG define a “person”?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              A “person” is a software-generated grouping of similar faces. It does not represent a verified real-world
+              identity.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">13. Does DawaIMG identify real people by name?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              No. DawaIMG does not know who anyone is and makes no identity claims.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">14. How accurate is face recognition in DawaIMG?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              Results are probabilistic and configurable via similarity thresholds. Outputs are analytical, not
+              authoritative.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">15. Does DawaIMG detect race or ethnicity?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              No. DawaIMG does not identify, infer, or categorize race, ethnicity, or protected characteristics.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">16. What does gender and age detection mean in DawaIMG?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              Gender and age features are visual attribute estimates only and do not infer identity, orientation, or
+              personal traits.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">17. Can I blur faces for privacy?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              Yes. DawaIMG includes face blurring tools for anonymization and privacy-preserving workflows.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">18. Who owns the data processed by DawaIMG?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              You do. All data remains local, and users retain full ownership and responsibility for imported content.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">19. Does DawaIMG verify legality or consent of media?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              No. DawaIMG does not verify legality or consent. Users are responsible for complying with applicable laws.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">20. Who is DawaIMG best suited for?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              DawaIMG is intended for researchers, analysts, and organizations working with large datasets who require
+              offline, privacy-first face forensics and experimentation tools.
+            </div>
+          </div>
+
+          <div
+            style="
+              border: 1px solid rgba(0,0,0,0.10);
+              background: rgba(0,0,0,0.02);
+              border-radius: 12px;
+              padding: 14px;
+            "
+          >
+            <div style="font-weight: 750; color:#2e2f33;">21. Is DawaIMG Open Source?</div>
+            <div style="color: #5a5f66; margin-top: 6px;">
+              DawaIMG is intentionally not open source. Releasing the code without constraints would make it easy for
+              the software to be modified or repurposed in ways that enable harm or misuse beyond its intended scope.
+              The current distribution model allows DawaIMG to maintain clear technical and ethical boundaries, enforce
+              safeguards, and limit dual-use risks while still providing powerful, offline capabilities for legitimate
+              research and forensic work.
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+<!-- Notable Research Work -->
+<section id="research" style="margin-top: 34px;">
+  <h2 style="margin: 0 0 12px; font-size: 22px; color:#2e2f33;">📚 Notable Research Work</h2>
+  Download complete investigations and open them directly in DawaIMG to explore real workflows and analysis.
+  <div
+    style="
+      border: 1px solid rgba(0,0,0,0.10);
+      background: rgba(0,0,0,0.02);
+      border-radius: 12px;
+      overflow: hidden;
+    "
+  >
+    <table style="width: 100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background: rgba(74,111,165,0.10);">
+          <th style="text-align:left;padding:12px 14px;font-size:13px;color:#2e2f33;border-bottom:1px solid rgba(0,0,0,0.10);font-weight:750;">
+            Investigation
+          </th>
+          <th style="text-align:left;padding:12px 14px;font-size:13px;color:#2e2f33;border-bottom:1px solid rgba(0,0,0,0.10);font-weight:750;">
+            Download
+          </th>
+          <th style="text-align:left;padding:12px 14px;font-size:13px;color:#2e2f33;border-bottom:1px solid rgba(0,0,0,0.10);font-weight:750;">
+            Description
+          </th>
+          <th style="text-align:left;padding:12px 14px;font-size:13px;color:#2e2f33;border-bottom:1px solid rgba(0,0,0,0.10);font-weight:750;width:140px;white-space:nowrap;">
+            Date
+          </th>
+          <th style="text-align:left;padding:12px 14px;font-size:13px;color:#2e2f33;border-bottom:1px solid rgba(0,0,0,0.10);font-weight:750;width:120px;white-space:nowrap;">
+            Version
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;">Epstein Files</td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;"><a
+    href="https://f004.backblazeb2.com/file/DawaImg/Epstein+1+Project.zip"
+    target="_blank"
+    rel="noopener noreferrer"
+    style="color:#4a6fa5;text-decoration:none;word-break:break-all;"
+  >
+    https://f004.backblazeb2.com/file/DawaImg/Epstein+1+Project.zip
+  </a></td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;">All Faces from the Epistein Files release [https://oversight.house.gov/release/oversight-committee-releases-epstein-records-provided-by-the-department-of-justice/] 1, sourced from the 200,000 publically released documents. Faces are unlabelled</td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;white-space:nowrap;">February 4, 2026</td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;white-space:nowrap;">1</td>
+        </tr>
+        <tr>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;">Epstein Files</td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;">Currently in progress [open up a ticket to get involved]</td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;">All Faces from the Epistein Files release [https://www.justice.gov/epstein/doj-disclosures] 2, sourced from the 100,000 publically released documents. Faces will be unlabelled</td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;white-space:nowrap;">February 4, 2026</td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;white-space:nowrap;">1</td>
+        </tr>
+        <tr>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;">Operation Metro Surge Minnesota</td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;">Currently in progress [open up a ticket to get involved]</td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;">A public, archive-grade collection of images and videos recorded during Operation Metro Surge in Minnesota.
+Media is extracted into frames and faces, linked back to original sources, and made searchable without face recognition or identity claims.
+Built to support lawyers, journalists, and researchers who need verifiable, non-sensational access to public visual evidence.</td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;white-space:nowrap;">Dec, 2025</td>
+          <td style="padding:12px 14px;border-bottom:1px solid rgba(0,0,0,0.08);color:#5a5f66;font-size:14px;white-space:nowrap;">1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- How to import projects -->
+  <div
+    style="
+      margin-top: 18px;
+      border: 1px solid rgba(0,0,0,0.10);
+      background: rgba(0,0,0,0.02);
+      border-radius: 12px;
+      padding: 14px;
+    "
+  >
+    <div style="font-weight:700;margin-bottom:8px;color:#2e2f33;">How to import projects</div>
+    <ol style="margin:0;padding-left:18px;color:#2e2f33;">
+      <li>Download the zip file.</li>
+      <li style="margin-top:6px;">Unzip the file; it will be a folder.</li>
+      <li style="margin-top:6px;">
+        Place the folder inside
+        <span style="color:#5a5f66;">/home/DawaIMG/projects/&lt;Your new folder here&gt;</span>.
+      </li>
+      <li style="margin-top:6px;">Launch DawaIMG; the new project will appear.</li>
+      <li style="margin-top:6px;">
+        You can modify the project and export it for redistribution or make changes as needed.
+      </li>
+    </ol>
+  </div>
+</section>
+
+
+      <!-- Notable Uses -->
+      <section style="margin-top: 34px;">
+        <h2 style="margin: 0 0 12px; font-size: 22px; color:#2e2f33;">🏆 Noteable Uses</h2>
+
+        <div
+          style="
+            border: 1px solid rgba(0,0,0,0.10);
+            background: rgba(0,0,0,0.02);
+            border-radius: 12px;
+            padding: 14px;
+          "
+        >
+          <div style="font-weight: 700; margin-bottom: 8px; color:#2e2f33;">DawaIMG has noteable contributions</div>
+          <ul style="margin: 0; padding-left: 18px; color:#2e2f33;">
+            <li>
+              Missing persons investigations (Florida and New York) — used in collaboration with licensed private
+              investigators for post-capture face comparison against user-provided datasets and contextual image
+              analysis to support locating missing women; not real-time tracking or surveillance.
+            </li>
+		<li>
+Helping identify and locate <b>women being exploited through online escort listings</b>, so they can be <b>safely recovered and reunited with their families</b> — and proven at <b>extreme scale</b>, including a use case that required processing <b>~1 petabyte of image data</b>.
+
+</li>
+            <li style="margin-top: 6px;">
+              Madeleine McCann missing persons research — used by a newspaper reporter for post-capture face comparison,
+              comparing source images against a large corpus of publicly available images to identify potential matches;
+              no real-time tracking or surveillance involved.
+            </li>
+            <li style="margin-top: 6px;">
+              January 6 U.S. Capitol attack media archiving — used for post-capture image and video cataloging and
+              organization, not for real-time monitoring, tracking, or surveillance.
+            </li>
+            <li style="margin-top: 6px;">Organizing Wedding Photos</li>
+            <li style="margin-top: 6px;">
+              Minnesota “Operation Metro Surge” media archiving — used to organize large volumes of images and video
+              for journalists (post-capture only), not for tracking or real-time surveillance.
+            </li>
+          </ul>
+        </div>
+
+
+      </section>
+
+      <!-- Contribute -->
+      <section style="margin-top: 34px;">
+        <h2 style="margin: 0 0 12px; font-size: 22px; color:#2e2f33;">🤝 Contribute</h2>
+
+        <div
+          style="
+            border: 1px solid rgba(0,0,0,0.10);
+            background: rgba(0,0,0,0.02);
+            border-radius: 12px;
+            padding: 14px;
+          "
+        >
+          <div style="font-weight: 700; margin-bottom: 8px; color:#2e2f33;">How can I contribute?</div>
+          <ul style="margin: 0; padding-left: 18px; color:#2e2f33;">
+            <li>
+              <span style="font-weight: 650;">Bugs and Issues:</span>
+              Open an issue on our GitHub page at <span style="color: #5a5f66;">[LINK]</span>
+            </li>
+            <li style="margin-top: 6px;">
+              <span style="font-weight: 650;">Suggest new features:</span>
+              Open a labeled issue on our GitHub page at <span style="color: #5a5f66;">[LINK]</span>
+            </li>
+            <li style="margin-top: 6px;">
+              <span style="font-weight: 650;">Contribute financially:</span>
+              Donate via GitHub at <span style="color: #5a5f66;">[LINK]</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Roadmap -->
+      <section id="roadmap" style="margin-top: 34px;">
+        <h2 style="margin: 0 0 12px; font-size: 22px; color:#2e2f33;">🗺️ DawaIMG Road Map</h2>
+        <div style="color: #5a5f66; font-size: 14px; margin-bottom: 10px;">2026 Development Road Map</div>
+
+        <div
+          style="
+            border: 1px solid rgba(0,0,0,0.10);
+            background: rgba(0,0,0,0.02);
+            border-radius: 12px;
+            padding: 14px;
+          "
+        >
+          <div style="font-weight: 700; margin-bottom: 10px; color:#2e2f33;">We are looking for people to help</div>
+          <ul style="margin: 0; padding-left: 18px; color:#2e2f33;">
+            <li>
+              Annotate and tag custom areas of interest on faces to train classifiers (e.g., nose, hairstyle, ears,
+              chin, mask, mask type)
+            </li>
+            <li style="margin-top: 6px;">Add custom plugins feature</li>
+            <li style="margin-top: 6px;">Allow custom ONNX files to be used as plugins</li>
+            <li style="margin-top: 6px;">
+              Use a project as a server, and ask LLM questions like: “Find all faces that are male wearing a mask”
+            </li>
+            <li style="margin-top: 6px;">Adding image object detection</li>
+            <li style="margin-top: 6px;">TBC what objects, but road signs, vehicles, etc would be good</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer style="margin-top: 40px; padding-top: 16px; border-top: 1px solid rgba(0,0,0,0.08);">
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+          <div style="color: #5a5f66; font-size: 13px;">
+            DawaImg • Offline Face Forensics Organizer • Mac & Windows
+          </div>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+             <a href="#research" style="color: #4a6fa5; text-decoration: none; font-size: 13px;">Research</a>
+            <a href="#download" style="color: #4a6fa5; text-decoration: none; font-size: 13px;">Download</a>
+            <a href="#screenshots" style="color: #4a6fa5; text-decoration: none; font-size: 13px;">Screenshots</a>
+            <a href="#faq" style="color: #4a6fa5; text-decoration: none; font-size: 13px;">FAQ</a>
+            <a href="#roadmap" style="color: #4a6fa5; text-decoration: none; font-size: 13px;">Road Map</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
