@@ -285,7 +285,7 @@
     <div
       style="
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 14px;
       "
     >
@@ -297,7 +297,7 @@
         <ul style="margin: 0; padding-left: 18px; color:#2e2f33; font-size:14px;">
           <li>Desktop face forensics and organization tool</li>
           <li>Runs entirely on your machine</li>
-          <li>Designed for large image and video collections</li>
+          <li>Designed for large image, video and document collections</li>
         </ul>
       </div>
 
@@ -307,12 +307,25 @@
           What you do
         </div>
         <ol style="margin: 0; padding-left: 18px; color:#2e2f33; font-size:14px;">
-          <li>Import a folder, Image, Video, PDF, </li>
+          <li>Import folders, images, video, or PDFs</li>
           <li>Extract and cluster faces into “people”</li>
           <li>Search, label, blur, or export results</li>
-          <li>Face Recognition on local data</li>
-          <li>Cross-reference faces back to original frames</li>
+          <li>Run face recognition on local data</li>
+          <li>Trace faces back to original frames</li>
         </ol>
+      </div>
+
+      <!-- Evidence model -->
+      <div>
+        <div style="font-weight: 750; margin-bottom: 6px; color:#2e2f33;">
+          Evidence Model
+        </div>
+        <ul style="margin: 0; padding-left: 18px; color:#2e2f33; font-size:14px;">
+          <li>Non-destructive processing</li>
+          <li>Immutable source records</li>
+          <li>Frame-level provenance tracking</li>
+          <li>Parent-child artifact linkage</li>
+        </ul>
       </div>
 
       <!-- What it is not -->
@@ -339,11 +352,11 @@
         max-width: 920px;
       "
     >
-      In short: you bring the data, DawaIMG does the analysis locally, and you decide how results are used.
+      In short: you bring the data, DawaIMG processes it locally using a structured, non-destructive
+      record model, and every derived artifact can be traced back to its original source.
     </div>
   </div>
 </section>
-
 
 
       <!-- Screenshots -->
@@ -572,6 +585,78 @@
           </div>
         </div>
       </section>
+
+      <section id="provenance" style="margin-top: 34px;">
+  <h2 style="margin: 0 0 12px; font-size: 22px; color:#2e2f33;">
+    🔗 Evidence Integrity & Chain of Custody
+  </h2>
+
+  <div style="color:#5a5f66; font-size:14px; max-width:920px; margin-bottom:14px;">
+    DawaIMG uses a non-destructive processing model designed to preserve original data
+    and document every transformation step. All analysis occurs on derived copies,
+    while original source material remains unchanged.
+  </div>
+
+  <div
+    style="
+      border: 1px solid rgba(0,0,0,0.10);
+      background: rgba(0,0,0,0.02);
+      border-radius: 12px;
+      padding: 16px;
+    "
+  >
+    <div style="font-weight:700;margin-bottom:10px;color:#2e2f33;">
+      Structured Record Model
+    </div>
+
+    <ul style="margin:0;padding-left:18px;color:#2e2f33;font-size:14px;">
+      <li style="margin-bottom:8px;">
+        <strong>SourceRecord</strong> – Created at ingestion to document the origin of imported data.
+      </li>
+      <li style="margin-bottom:8px;">
+        <strong>ResourceRecord</strong> – Generated per file to record file-level metadata and processing events.
+      </li>
+      <li style="margin-bottom:8px;">
+        <strong>FrameRecord</strong> – Created for each image, video frame, or PDF page extracted during review.
+      </li>
+      <li style="margin-bottom:8px;">
+        <strong>FaceRecord</strong> – Generated when a face is detected, linking directly back to its parent FrameRecord.
+      </li>
+    </ul>
+  </div>
+
+  <div style="margin-top:14px;color:#5a5f66;font-size:14px;max-width:920px;">
+    Each record maintains parent-child relationships, forming a traceable chain from
+    derived artifacts (faces) back to original source material.
+    Original files are never modified. All analytical outputs are stored separately
+    as derived data.
+  </div>
+
+  <div
+    style="
+      margin-top: 16px;
+      border: 1px solid rgba(0,0,0,0.10);
+      background: rgba(74,111,165,0.06);
+      border-radius: 12px;
+      padding: 14px;
+      font-size:14px;
+      color:#2e2f33;
+      max-width:920px;
+    "
+  >
+    <strong>Non-Destructive Workflow</strong><br />
+    • Original media remains untouched<br />
+    • All processing occurs on copies or derived artifacts<br />
+    • Parent-child record linkage is preserved<br />
+    • Results are reproducible within the same project environment
+  </div>
+
+  <div style="margin-top:12px;color:#5a5f66;font-size:13px;max-width:920px;">
+    DawaIMG provides structured provenance tracking for analytical workflows.
+    It does not certify legal admissibility or replace formal forensic validation procedures.
+  </div>
+</section>
+
 
       <!-- Files that can be searched -->
 <section id="filetypes" style="margin-top: 34px;">
@@ -1495,6 +1580,7 @@ Online image trace in a missing person case — Used to identify publicly availa
             </li>
             <li style="margin-top: 6px;">Adding image object detection</li>
             <li style="margin-top: 6px;">TBC what objects, but road signs, vehicles, etc would be good</li>
+             <li style="margin-top: 6px;">Code Certification</li>
           </ul>
         </div>
       </section>
